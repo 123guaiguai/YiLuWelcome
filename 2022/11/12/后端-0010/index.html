@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.7.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.7.0" type="image/png" sizes="32x32"><meta name="description" content="后端-0010                           前置知识                           一、面向对象的三大特征：        封装 继承 多态                      二、异常       1、你需要掌握以下三种类型的异常：  检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="后端-0010">
+<meta property="og:url" content="http://example.com/2022/11/12/%E5%90%8E%E7%AB%AF-0010/index.html">
+<meta property="og:site_name" content="行者一路">
+<meta property="og:description" content="后端-0010                           前置知识                           一、面向对象的三大特征：        封装 继承 多态                      二、异常       1、你需要掌握以下三种类型的异常：  检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-11-12T15:23:34.000Z">
+<meta property="article:modified_time" content="2022-11-12T15:31:27.586Z">
+<meta property="article:author" content="YiLu">
+<meta name="twitter:card" content="summary"><title>后端-0010 | 行者一路</title><link ref="canonical" href="http://example.com/2022/11/12/%E5%90%8E%E7%AB%AF-0010/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.7.0"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.2"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">行者一路</div><div class="header-banner-info__subtitle">一路招新2022</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">后端-0010</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-11-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-11-12</span></span></div></header><div class="post-body">
+        <h2 id="后端-0010"   >
+          <a href="#后端-0010" class="heading-link"><i class="fas fa-link"></i></a><a href="#后端-0010" class="headerlink" title="后端-0010"></a>后端-0010</h2>
+      
+        <h3 id="前置知识"   >
+          <a href="#前置知识" class="heading-link"><i class="fas fa-link"></i></a><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h3>
+      
+        <h4 id="一、面向对象的三大特征："   >
+          <a href="#一、面向对象的三大特征：" class="heading-link"><i class="fas fa-link"></i></a><a href="#一、面向对象的三大特征：" class="headerlink" title="一、面向对象的三大特征："></a>一、面向对象的三大特征：</h4>
+      <ul>
+<li>封装</li>
+<li>继承</li>
+<li>多态</li>
+</ul>
+
+        <h4 id="二、异常"   >
+          <a href="#二、异常" class="heading-link"><i class="fas fa-link"></i></a><a href="#二、异常" class="headerlink" title="二、异常"></a>二、异常</h4>
+      <p>1、你需要掌握以下三种类型的异常：</p>
+<ul>
+<li><strong>检查性异常：</strong>最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。</li>
+<li><strong>运行时异常：</strong> 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。</li>
+<li><strong>错误：</strong> 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。</li>
+</ul>
+<p>2、异常的捕获</p>
+<span id="more"></span>
+<p>3、自定义异常</p>
+
+        <h3 id="题目"   >
+          <a href="#题目" class="heading-link"><i class="fas fa-link"></i></a><a href="#题目" class="headerlink" title="题目"></a>题目</h3>
+      <p>1、（1）定义一个游戏中Hero 英雄的类，在该类中定义英雄的名字， 生命值和等级3 个属性，定义一个构造函数完成对生命值和等级的初始化，分别赋初值为100，1。同时实现名字的输入和英雄信息的输出。</p>
+<p>（2）在上一题的基础上，为英雄再定义拥有一个参数的构造方法，传入一个英雄类型的值，如果为1，则为普通英雄，生命值为100，如果该值为2，则为高级英雄，生命值初始化为200。</p>
+<p>（3）在上两英雄类型的基础上，为英雄添加一个基本战斗的方法， 该方法拥有一个英雄类型的参数，当传入另一个英雄时，能降低对方100 点血。 再增加一个绝招的重载方法，加入一个战斗类型参数，通过输入不同绝招参数，降低对方不同的血量。</p>
+<p>2、创建一个名称为Vehicle的接口 在接口中添加两个带有一个参数的方法start()和stop()。在两个名称分别为Bike和Bus的类中实现Vehicle接口。创建一个名称为interfaceDemo的类 在interfaceDemo的main()方法中创建Bike和Bus对象 并访问start()和stop()方法。</p>
+<p>3、定义一个抽象的”Role”类 有姓名 年龄 性别等成员变量 </p>
+<p> （1）要求尽可能隐藏所有变量(能够私有就私有,能够保护就不要公有) 再通过GetXXX()和SetXXX()方法对各变量进行读写。具有一个抽象的play()方法 该方法不返回任何值 同时至少定义两个构造方法。Role类中要体现出this的几种用法。 </p>
+<p>（2）从Role类派生出一个”Employee”类 该类具有Role类的所有成员 构造方法除外 并扩展 salary成员变量 同时增加一个静态成员变量“职工编号 ID ”。同样要有至少两个构造方法 要体现出this和super的几种用法 还要求覆盖play()方法 并提供一个final sing()方法。 </p>
+<p>（3）”Manager”类继承”Employee”类 有一个final成员变量”vehicle” </p>
+<p>（4）在main()方法中制造Manager和Employee对象,并测试这些对象的方法</p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://example.com">YiLu</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://example.com/2022/11/12/%E5%90%8E%E7%AB%AF-0010/">http://example.com/2022/11/12/%E5%90%8E%E7%AB%AF-0010/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2022/11/12/%E5%90%8E%E7%AB%AF-0001/"><span class="paginator-prev__text">后端-0001</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E7%AB%AF-0010"><span class="toc-number">1.</span> <span class="toc-text">
+          后端-0010</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86"><span class="toc-number">1.1.</span> <span class="toc-text">
+          前置知识</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81%EF%BC%9A"><span class="toc-number">1.1.1.</span> <span class="toc-text">
+          一、面向对象的三大特征：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%BC%82%E5%B8%B8"><span class="toc-number">1.1.2.</span> <span class="toc-text">
+          二、异常</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE"><span class="toc-number">1.2.</span> <span class="toc-text">
+          题目</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://s1.ax1x.com/2022/11/12/zid0Wq.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">一路相伴</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">24</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">分类</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>YiLu</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.7.0"></script><script src="/js/stun-boot.js?v=2.7.0"></script><script src="/js/scroll.js?v=2.7.0"></script><script src="/js/header.js?v=2.7.0"></script><script src="/js/sidebar.js?v=2.7.0"></script></body></html>

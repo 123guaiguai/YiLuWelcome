@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.7.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.7.0" type="image/png" sizes="32x32"><meta name="description" content="前端－0100       添加一些JavaScript技巧                     比如说，先加一个轮播图。                           😄啥是轮播图        截至到现在，我们做的页面都还是静态的。就好像我们只是拍了一张自己的照片，但是别人并不知道我们这个人其他的角度是什么样子的。比如背面，侧脸等。下面我们就将在上一个项目：《">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端-0100">
+<meta property="og:url" content="http://example.com/2022/11/12/%E5%89%8D%E7%AB%AF-0100/index.html">
+<meta property="og:site_name" content="行者一路">
+<meta property="og:description" content="前端－0100       添加一些JavaScript技巧                     比如说，先加一个轮播图。                           😄啥是轮播图        截至到现在，我们做的页面都还是静态的。就好像我们只是拍了一张自己的照片，但是别人并不知道我们这个人其他的角度是什么样子的。比如背面，侧脸等。下面我们就将在上一个项目：《">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-11-12T15:03:23.000Z">
+<meta property="article:modified_time" content="2022-11-12T15:42:46.220Z">
+<meta property="article:author" content="YiLu">
+<meta name="twitter:card" content="summary"><title>前端-0100 | 行者一路</title><link ref="canonical" href="http://example.com/2022/11/12/%E5%89%8D%E7%AB%AF-0100/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.7.0"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.2"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">行者一路</div><div class="header-banner-info__subtitle">一路招新2022</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">前端-0100</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-11-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-11-12</span></span></div></header><div class="post-body">
+        <h1 id="前端－0100"   >
+          <a href="#前端－0100" class="heading-link"><i class="fas fa-link"></i></a><a href="#前端－0100" class="headerlink" title="前端－0100"></a>前端－0100</h1>
+      <p>添加一些JavaScript技巧</p>
+
+        <h3 id="比如说，先加一个轮播图。"   >
+          <a href="#比如说，先加一个轮播图。" class="heading-link"><i class="fas fa-link"></i></a><a href="#比如说，先加一个轮播图。" class="headerlink" title="比如说，先加一个轮播图。"></a>比如说，先加一个轮播图。</h3>
+      
+        <h3 id="😄啥是轮播图"   >
+          <a href="#😄啥是轮播图" class="heading-link"><i class="fas fa-link"></i></a><a href="#😄啥是轮播图" class="headerlink" title="😄啥是轮播图"></a>😄啥是轮播图</h3>
+      <blockquote>
+<p>截至到现在，我们做的页面都还是静态的。就好像我们只是拍了一张自己的照片，但是别人并不知道我们这个人其他的角度是什么样子的。比如背面，侧脸等。下面我们就将在上一个项目：<strong>《个人名片》</strong>的基础上，让我们的个人图片部分动起来.</p>
+</blockquote>
+
+        <h3 id="📀大致的效果"   >
+          <a href="#📀大致的效果" class="heading-link"><i class="fas fa-link"></i></a><a href="#📀大致的效果" class="headerlink" title="📀大致的效果"></a>📀大致的效果</h3>
+      <p>就比如这样—<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://img-blog.csdnimg.cn/20210427205121339.gif#pic_center" >简单的轮播图1</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>—</p>
+
+        <h3 id="❓你需要准备些什么"   >
+          <a href="#❓你需要准备些什么" class="heading-link"><i class="fas fa-link"></i></a><a href="#❓你需要准备些什么" class="headerlink" title="❓你需要准备些什么"></a>❓你需要准备些什么</h3>
+      <span id="more"></span>
+<ul>
+<li><p>h5和css基础知识</p>
+</li>
+<li><p>js基础语法已经不够了，你要明白什么是对象，DOM,以及BOM</p>
+</li>
+<li><p>暂时我是不推荐使用jQuery的，这个以后实际开发会用，但是我们考核的时候还是不建议</p>
+</li>
+</ul>
+
+        <h3 id="🙌大致的思路"   >
+          <a href="#🙌大致的思路" class="heading-link"><i class="fas fa-link"></i></a><a href="#🙌大致的思路" class="headerlink" title="🙌大致的思路"></a>🙌大致的思路</h3>
+      
+        <h4 id="对象的思想"   >
+          <a href="#对象的思想" class="heading-link"><i class="fas fa-link"></i></a><a href="#对象的思想" class="headerlink" title="对象的思想"></a>对象的思想</h4>
+      <p>h5和css给出基础盒子框架</p>
+<p>我们知道，而每一个元素其实都是盒子装起来的，轮播图自然也不例外，那么先摆放盒子吧。</p>
+<p><strong>万物都可是对象</strong></p>
+<p>所有的图片其实都可以被创建为对象，你可以准备好几个自己的自拍照片，注意，尽量每一个照片的大小都要一样，不然后续可能会有一些小小的麻烦。</p>
+<p><strong>DOM产生事件流</strong></p>
+<p>既然你想点击按钮就可以使得图片动起来，那就是必须有事件监听机制是吧。来吧，给你的按钮加上点击事件，结果就是每次点击按钮的时候，它都会自动把当前的图片变成下一张图片！，这样你的轮播图已经做的差不多了！，只是你会发现尴尬的是，这个图片没法自己动起来。</p>
+<p><strong>BOM 给我自动动起来</strong></p>
+<p>首先我们可以把前面的图片切换写成函数的形式，这样它就可以被多次方便的使用了。而且在BOM中我们学过定时器！那么我们可以设置一个定时器，每当过1s就自动调用函数，使得图片发生改变，这样，就可以自动动起来了！ </p>
+
+        <h4 id="视频教学"   >
+          <a href="#视频教学" class="heading-link"><i class="fas fa-link"></i></a><a href="#视频教学" class="headerlink" title="视频教学"></a>视频教学</h4>
+      <p>如果你实在没法自己做出来，别急，这里有黑马程序员老师手把手教你</p>
+<p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://cdn.iframe.ly/KMaI8JN" >黑马前端-轮播图</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+
+        <h4 id="虽然让一个名片轮播你的几张照片看起来有点奇怪哈哈哈哈哈，但是我们希望你通过练习熟悉熟悉更多的前端技巧嗯。"   >
+          <a href="#虽然让一个名片轮播你的几张照片看起来有点奇怪哈哈哈哈哈，但是我们希望你通过练习熟悉熟悉更多的前端技巧嗯。" class="heading-link"><i class="fas fa-link"></i></a><a href="#虽然让一个名片轮播你的几张照片看起来有点奇怪哈哈哈哈哈，但是我们希望你通过练习熟悉熟悉更多的前端技巧嗯。" class="headerlink" title="虽然让一个名片轮播你的几张照片看起来有点奇怪哈哈哈哈哈，但是我们希望你通过练习熟悉熟悉更多的前端技巧嗯。"></a>虽然让一个名片轮播你的几张照片看起来有点奇怪哈哈哈哈哈，但是我们希望你通过练习熟悉熟悉更多的前端技巧嗯。</h4>
+      
+        <h4 id="除此之外，你还可以运用你学到的JavaScript技巧为你的名片增加更多的内容，比如加一个搜索框，加一些按钮，加一些交互动效（比如鼠标悬停到按钮上可以变色）等等。"   >
+          <a href="#除此之外，你还可以运用你学到的JavaScript技巧为你的名片增加更多的内容，比如加一个搜索框，加一些按钮，加一些交互动效（比如鼠标悬停到按钮上可以变色）等等。" class="heading-link"><i class="fas fa-link"></i></a><a href="#除此之外，你还可以运用你学到的JavaScript技巧为你的名片增加更多的内容，比如加一个搜索框，加一些按钮，加一些交互动效（比如鼠标悬停到按钮上可以变色）等等。" class="headerlink" title="除此之外，你还可以运用你学到的JavaScript技巧为你的名片增加更多的内容，比如加一个搜索框，加一些按钮，加一些交互动效（比如鼠标悬停到按钮上可以变色）等等。"></a>除此之外，你还可以运用你学到的JavaScript技巧为你的名片增加更多的内容，比如加一个搜索框，加一些按钮，加一些交互动效（比如鼠标悬停到按钮上可以变色）等等。</h4>
+      
+        <h3 id="进阶"   >
+          <a href="#进阶" class="heading-link"><i class="fas fa-link"></i></a><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h3>
+      <p>学习手写轮播图对于前端初学者是一个不小的挑战，也是一次锻炼，所以请不要逃避哟！但是在真正的前端开发中我们难道还需要手写这些明显可以被复用的组件吗？（可以去了解一下什么是复用的概念。）,现在，这里有几个第三方ui组件库推荐给大家，在网站里我们惊喜地发现有大量的组件我们可以直接拿来复用，轮播图，日历，表单….,去了解一下怎么初步使用这些第三方组件库吧。</p>
+<p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://element-plus.org/zh-CN/" >element-plus</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://ant.design/docs/react/introduce-cn" >ant-design</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+
+        <h5 id="注：学习这些第三方组件库可能会涉及到框架的知识，但是你们只需要了解到npm的基本使用即可。"   >
+          <a href="#注：学习这些第三方组件库可能会涉及到框架的知识，但是你们只需要了解到npm的基本使用即可。" class="heading-link"><i class="fas fa-link"></i></a><a href="#注：学习这些第三方组件库可能会涉及到框架的知识，但是你们只需要了解到npm的基本使用即可。" class="headerlink" title="注：学习这些第三方组件库可能会涉及到框架的知识，但是你们只需要了解到npm的基本使用即可。"></a>注：学习这些第三方组件库可能会涉及到框架的知识，但是你们只需要了解到npm的基本使用即可。</h5>
+      </div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://example.com">YiLu</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://example.com/2022/11/12/%E5%89%8D%E7%AB%AF-0100/">http://example.com/2022/11/12/%E5%89%8D%E7%AB%AF-0100/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2022/11/12/%E5%89%8D%E7%AB%AF-0101/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">前端-0101</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2022/11/12/%E5%89%8D%E7%AB%AF-0011/"><span class="paginator-prev__text">前端-0011</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%EF%BC%8D0100"><span class="toc-number">1.</span> <span class="toc-text">
+          前端－0100</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AF%94%E5%A6%82%E8%AF%B4%EF%BC%8C%E5%85%88%E5%8A%A0%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%92%AD%E5%9B%BE%E3%80%82"><span class="toc-number">1.0.1.</span> <span class="toc-text">
+          比如说，先加一个轮播图。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%98%84%E5%95%A5%E6%98%AF%E8%BD%AE%E6%92%AD%E5%9B%BE"><span class="toc-number">1.0.2.</span> <span class="toc-text">
+          😄啥是轮播图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%93%80%E5%A4%A7%E8%87%B4%E7%9A%84%E6%95%88%E6%9E%9C"><span class="toc-number">1.0.3.</span> <span class="toc-text">
+          📀大致的效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9D%93%E4%BD%A0%E9%9C%80%E8%A6%81%E5%87%86%E5%A4%87%E4%BA%9B%E4%BB%80%E4%B9%88"><span class="toc-number">1.0.4.</span> <span class="toc-text">
+          ❓你需要准备些什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%99%8C%E5%A4%A7%E8%87%B4%E7%9A%84%E6%80%9D%E8%B7%AF"><span class="toc-number">1.0.5.</span> <span class="toc-text">
+          🙌大致的思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%80%9D%E6%83%B3"><span class="toc-number">1.0.5.1.</span> <span class="toc-text">
+          对象的思想</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%86%E9%A2%91%E6%95%99%E5%AD%A6"><span class="toc-number">1.0.5.2.</span> <span class="toc-text">
+          视频教学</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%99%BD%E7%84%B6%E8%AE%A9%E4%B8%80%E4%B8%AA%E5%90%8D%E7%89%87%E8%BD%AE%E6%92%AD%E4%BD%A0%E7%9A%84%E5%87%A0%E5%BC%A0%E7%85%A7%E7%89%87%E7%9C%8B%E8%B5%B7%E6%9D%A5%E6%9C%89%E7%82%B9%E5%A5%87%E6%80%AA%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88%EF%BC%8C%E4%BD%86%E6%98%AF%E6%88%91%E4%BB%AC%E5%B8%8C%E6%9C%9B%E4%BD%A0%E9%80%9A%E8%BF%87%E7%BB%83%E4%B9%A0%E7%86%9F%E6%82%89%E7%86%9F%E6%82%89%E6%9B%B4%E5%A4%9A%E7%9A%84%E5%89%8D%E7%AB%AF%E6%8A%80%E5%B7%A7%E5%97%AF%E3%80%82"><span class="toc-number">1.0.5.3.</span> <span class="toc-text">
+          虽然让一个名片轮播你的几张照片看起来有点奇怪哈哈哈哈哈，但是我们希望你通过练习熟悉熟悉更多的前端技巧嗯。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%99%A4%E6%AD%A4%E4%B9%8B%E5%A4%96%EF%BC%8C%E4%BD%A0%E8%BF%98%E5%8F%AF%E4%BB%A5%E8%BF%90%E7%94%A8%E4%BD%A0%E5%AD%A6%E5%88%B0%E7%9A%84JavaScript%E6%8A%80%E5%B7%A7%E4%B8%BA%E4%BD%A0%E7%9A%84%E5%90%8D%E7%89%87%E5%A2%9E%E5%8A%A0%E6%9B%B4%E5%A4%9A%E7%9A%84%E5%86%85%E5%AE%B9%EF%BC%8C%E6%AF%94%E5%A6%82%E5%8A%A0%E4%B8%80%E4%B8%AA%E6%90%9C%E7%B4%A2%E6%A1%86%EF%BC%8C%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%8C%89%E9%92%AE%EF%BC%8C%E5%8A%A0%E4%B8%80%E4%BA%9B%E4%BA%A4%E4%BA%92%E5%8A%A8%E6%95%88%EF%BC%88%E6%AF%94%E5%A6%82%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%88%B0%E6%8C%89%E9%92%AE%E4%B8%8A%E5%8F%AF%E4%BB%A5%E5%8F%98%E8%89%B2%EF%BC%89%E7%AD%89%E7%AD%89%E3%80%82"><span class="toc-number">1.0.5.4.</span> <span class="toc-text">
+          除此之外，你还可以运用你学到的JavaScript技巧为你的名片增加更多的内容，比如加一个搜索框，加一些按钮，加一些交互动效（比如鼠标悬停到按钮上可以变色）等等。</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6"><span class="toc-number">1.0.6.</span> <span class="toc-text">
+          进阶</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8%EF%BC%9A%E5%AD%A6%E4%B9%A0%E8%BF%99%E4%BA%9B%E7%AC%AC%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6%E5%BA%93%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%B6%89%E5%8F%8A%E5%88%B0%E6%A1%86%E6%9E%B6%E7%9A%84%E7%9F%A5%E8%AF%86%EF%BC%8C%E4%BD%86%E6%98%AF%E4%BD%A0%E4%BB%AC%E5%8F%AA%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E5%88%B0npm%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E5%8D%B3%E5%8F%AF%E3%80%82"><span class="toc-number">1.0.6.0.1.</span> <span class="toc-text">
+          注：学习这些第三方组件库可能会涉及到框架的知识，但是你们只需要了解到npm的基本使用即可。</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://s1.ax1x.com/2022/11/12/zid0Wq.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">一路相伴</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">24</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">分类</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>YiLu</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.7.0"></script><script src="/js/stun-boot.js?v=2.7.0"></script><script src="/js/scroll.js?v=2.7.0"></script><script src="/js/header.js?v=2.7.0"></script><script src="/js/sidebar.js?v=2.7.0"></script></body></html>
